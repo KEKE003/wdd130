@@ -17,12 +17,11 @@ aside {
     padding: 1rem;
     background-color: #eee;
     color: #333;
-    text-align: right;
-    border-image: fill;
+    text-align: center;
 }
 
 aside img {
-    width: 300px;
+    width: 200px;
     height: auto;
 }
 
