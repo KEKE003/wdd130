@@ -5,11 +5,11 @@ main {
 aside {
     width: 20rem;
     margin: 1rem;
-    border: 1px solid rgb(0, 0, 0);
-    /* solid black */
+    border: 1px solid rgb(41, 177, 245);
+    /* blue */
     padding: 1rem;
-    background-color: rgb(71, 79, 76);
-    color: #5a5858;
+    background-color: #eee;
+    color: #333;
     text-align: center;
 }
 
@@ -22,6 +22,7 @@ aside img {
 main img {
     width: 150px;
     height: auto;
+    margin: 0, 5 rem;
 }
 
 p {
