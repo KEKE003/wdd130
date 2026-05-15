@@ -18,10 +18,11 @@ aside {
     background-color: #eee;
     color: #333;
     text-align: right;
+    border-image: fill;
 }
 
 aside img {
-    width: 200px;
+    width: 300px;
     height: auto;
 }
 
