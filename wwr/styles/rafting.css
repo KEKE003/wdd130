@@ -42,6 +42,7 @@ nav, p, section, article {
 }
 
 .hero article {
+    position: absolute;
     margin: 16px;
     padding: 8px;
     background-color: var(--accent2-color);
