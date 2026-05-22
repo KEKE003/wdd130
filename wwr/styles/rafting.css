@@ -41,6 +41,17 @@ nav, p, section, article {
     position: relative
 }
 
+.hero article {
+    margin: 16px;
+    padding: 8px;
+    background-color: var(--accent2-color);
+    color: var(--secondary-color)
+}
+
+.hero h1 {
+    font-size: 2.5em;
+}
+
 .hero img {
     display: block;
     width: 100%;
@@ -59,6 +70,6 @@ h1 {
 }
 
 .hero article img {
-    float: left;
+    float: right;
     width: 135px;
 }
