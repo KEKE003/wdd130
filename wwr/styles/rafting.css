@@ -1,11 +1,12 @@
 :root {
-    --primary-color: rgb(105, 166, 237);
-    /* light blue*/
-    --secondary-color: rgb(55, 134, 130);
-    /* teal */
-    --accent1-color: rgb(71, 71, 71);
-    /* dark grey*/
-    --accent2-color: rgb(61, 59, 93);
+    --primary-color: #32632c;
+    /* forest green*/
+    --secondary-color: #7f5e41;
+    /* brown */
+    --accent1-color: #c5e6c7;
+    /* white */
+    --accent2-color: #f3f9c8;
+    /* beige */
     --heading-font: Papyrus, Segoe Print, sans-serif;
     --body-font: Monotype Corsiva, Mongalian Baita, sans-serif;
 }
@@ -14,12 +15,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    ;
 }
 
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color);
-    line-height: 1.6;
+    background-color: rgb(245, 244, 237);
+    color: var(--accent2-color);
 }
 
 header,
@@ -32,7 +34,7 @@ footer {
 h1,
 h2 {
     font-family: var(--heading-font);
-    color: var(--accent2-color);
+    color: var(--primary-color);
 }
 
 nav,
@@ -43,33 +45,20 @@ article {
     padding: 8px;
 }
 
-.socialmedia-links a {
+.social-media a {
     text-decoration: none;
 }
 
 .hero {
-    position: relative
+    position: relative;
+    background-color: var(var(--primary-color)),
+        color(var(--secondary-color));
+    text-align: center;
+    padding: 80px 20px;
 }
 
 .hero article {
-    position: absolute;
-    margin: 16px;
-    padding: 8px;
-    background-color: var(--primary-color);
-    color: var(--secondary-color)
-}
-
-.hero h1 {
-    font-size: 2.5em;
-}
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-h1 {
+    color: var(--secondary-color);
     position: absolute;
     top: 10px;
     width: 100%;
@@ -81,22 +70,77 @@ h1 {
     /* white */
 }
 
+.hero h1 {
+    font-size: 2.5em;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .hero article img {
     float: right;
     width: 135px;
+
 }
 
 header {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
-    padding: 10px 20px;
-    background-color: rgb(119, 122, 125);
+    justify-content: space-between;
+    padding: 5px 10px;
+    background-color: var(--primary-color);
 }
 
-.logo {
-    max-height: 80px;
-    display: block;
+.logo img {
+    border-image: round;
+    image-rendering: auto;
+}
+
+.history-section {
+    padding: 40px 20px;
+    background-color: rgb(226, 213, 128);
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.history-section h1 {
+    text-align: center;
+    background-color: #8d763c;
+    color: #32632c;
+    margin-top: 20px;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.history-section img {
+    float: right;
+    margin-bottom: 10px;
+}
+
+.history-text {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #8d763c;
+    color: #e8ea82;
+}
+
+.history-text h2 {
+    color: #32632c;
+    margin-bottom: 40px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.history-text img {
+    align-content: center;
 }
 
 nav {
@@ -106,7 +150,7 @@ nav {
 }
 
 nav a {
-    color: #d4cece;
+    color: whitesmoke;
     text-decoration: none;
     padding: 10px 15px;
     font-weight: bold;
@@ -114,38 +158,21 @@ nav a {
 
 nav a:hover,
 nav a.active {
-    background-color: #0055a5;
-    border-radius: 5px;
-}
-
-.history-section {
-    padding: 40px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.history-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.history-content img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+    background-color: #4a4e51;
+    border-radius: 2px;
 }
 
 .adventures-section {
     padding: 40px 20px;
-    background-color: rgb(43, 192, 164);
+    background-color: #8d763c;
     text-align: center;
 }
 
 .adventures-section h2 {
     margin-bottom: 20px;
+    text-align: center;
+    object-fit: cover;
+    border-radius: 20px;
 }
 
 .adventures-container {
@@ -159,8 +186,10 @@ nav a.active {
 .adventures-container figure {
     flex: 1;
     background: white;
-    padding: 10px;
-    border-radius: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    text-align: center;
     box-shadow: 0 2px 5px rgb(105, 166, 237);
 }
 
@@ -169,13 +198,14 @@ nav a.active {
     height: 150px;
     object-fit: cover;
     border-radius: 3px;
+    display: block;
 }
 
 .adventures-container figcaption {
     margin-top: 8px;
     font-weight: bold;
     font-size: 0.9rem;
-    color: #9ee8ef;
+    color: #4a4e51;
 }
 
 footer {
@@ -183,22 +213,26 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #4a4e51;
+    background-color: var(--primary-color);
     color: whitesmoke;
-    margin-top: 40px;
 }
 
-.socialmedia-links {
+footer p {
+    margin: 0;
+}
+
+.social-media {
     display: flex;
-    gap: 15px;
+    gap: 13px;
 }
 
-.socialmedia-links img {
+.social-media img {
     width: 32px;
     height: 32px;
+    display: block;
     transition: transform 0.2s;
 }
 
-.socialmedia-links img:hover {
+.social-media img:hover {
     transform: scale(1.1);
 }
