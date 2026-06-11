@@ -5,7 +5,7 @@
     /* brown */
     --accent1-color: #c5e6c7;
     /* white */
-    --accent2-color: #f3f9c8;
+    --accent2-color: rgb(47, 47, 19);
     /* beige */
     --heading-font: Papyrus, Segoe Print, sans-serif;
     --body-font: Monotype Corsiva, Mongalian Baita, sans-serif;
@@ -20,7 +20,7 @@
 
 body {
     font-family: var(--body-font);
-    background-color: rgb(245, 244, 237);
+    background-color: white;
     color: var(--accent2-color);
 }
 
@@ -207,7 +207,7 @@ footer {
     align-items: center;
     padding: 20px;
     background-color: var(--primary-color);
-    color: whitesmoke;
+    color: white;
 }
 
 footer p {
@@ -259,7 +259,6 @@ footer p {
 
 .map-container iframe {
     display: block;
-    box-shadow: lightblue;
 }
 
 .employee-container {
@@ -359,7 +358,7 @@ fieldset.form-item label {
 
 .contact-form button[type="submit"] {
     background-color: var(--accent2-color);
-    color: #21250a;
+    color: #eef6c4;
     padding: 12px 24px;
     border: none;
     border-radius: 4px;
