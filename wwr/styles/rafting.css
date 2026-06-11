@@ -45,7 +45,7 @@ article {
     padding: 8px;
 }
 
-.social-media a {
+.socialmedia a {
     text-decoration: none;
 }
 
@@ -214,19 +214,19 @@ footer p {
     margin: 0;
 }
 
-.social-media {
+.socialmedia {
     display: flex;
     gap: 13px;
 }
 
-.social-media img {
+.socialmedia img {
     width: 32px;
     height: 32px;
     display: block;
     transition: transform 0.2s;
 }
 
-.social-media img:hover {
+.socialmedia img:hover {
     transform: scale(1.1);
 }
 
