@@ -39,3 +39,19 @@ footer {
     /* solid black */
     text-align: center;
 }
+
+aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgb(41, 177, 245);
+    /* blue */
+    padding: 3rem;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
