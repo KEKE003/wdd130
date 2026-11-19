@@ -54,6 +54,7 @@ h2 {
 }
 
 .hero article h1 {
+    position: absolute;
     margin-bottom: 0.5rem;
     font-size: 2rem;
 }
@@ -66,7 +67,7 @@ h2 {
 }
 
 .hero article img {
-    float: left;
+    float: right;
     width: 115px;
     height: 115px;
     margin: 0 1rem 0.5rem 0;
@@ -240,6 +241,7 @@ footer p {
     }
 
     .hero > img {
+        float: right;
         height: 320px;
     }
 
